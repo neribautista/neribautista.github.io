@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nerissa Bautista - Profile</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- JS -->
+   <script src="./static/index.js" def></script>
+  <!-- Sweet Alert-->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1><a href="#">Nerissa</a></h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills-education">Skills</a></li>
+        <li><a href="#skills-education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero" style="background-image: url('./images/f1_redbull.jpg');">
+    <div class="hero-text">
+      <h2>Hi, I'm Neri!</h2>
+      <p> Building fast, reliable apps that push the limits of performance.</p>
+    </div>
+  </div>
+<hr>
+  <!-- About Me Section -->
+<section class="about" id="about">
+  <div class="about-content">
+    <div class="text">
+      <h2>About Me</h2>
+      <p>Hi, I’m Neri! I’m a junior majoring in Computing & Informatics. Currently, 
+        I’m interning as an App Developer at Rowan University. In my spare time, 
+        I like to work on my personal website projects to enhance my skills in other programming languages.</p>
+      <h3>Hobbies & Interests</h3>
+      <ul>
+        <li>Reading Sci-Fi Novels</li>
+        <li>Developing Web Applications</li>
+        <li>Dancing</li>
+        <li>Drawing</li>
+        <li>Exploring AI Technologies</li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="./images/neri.jpg" alt="Profile Image">
+    </div>
+  </div>
+</section>
+<hr>
+
+<!-- Skills and Education Section -->
+<section class="skills-education" id="skills-education" style="background-image: url('')">
+  <div class="skills-container">
+    <h2>Skills | Proficiency</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Proficiency Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Advanced</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Django</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>C#</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Web/App Development</td>
+          <td>Intermediate</td>
+        </tr>
+        <tr>
+          <td>Communication Skills</td>
+          <td>Advanced</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="education-container">
+    <h2>Education</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Degree</th>
+          <th>Major/Concentration</th>
+          <th>Institution</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BA</td>
+          <td>Computing & Informatics (Concentration: Cybersecurity)</td>
+          <td>Rowan University</td>
+          <td>2026 (Expected)</td>
+        </tr>
+        <tr>
+          <td>BA</td>
+          <td>Entrepreneurship</td>
+          <td>Miriam College (Philippines)</td>
+          <td>2015</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<hr>
+
+<!--Contact Section-->
+<section class="contact" id="contact" style="background-image: url('./images/code_rain.jpg');">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <form>
+      <fieldset>
+        <legend>Send a Message</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email@mail.com">
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+
+    <div class="contact-info-box">
+      <div class="contact-details">
+        <p><strong>Email: </strong><a href="mailto:bautis38@students.rowan.edu">bautis38@students.rowan.edu</a></p>
+        <p><strong>Phone: </strong><a href="tel:+18566250676">+1 (856) 625-0676</a></p>
+
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="https://github.com/neribautista" class="social-icon">
+                <img src="./images/Github.jpg" alt="Github" class="social-img">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nerissabautista/" class="social-icon">
+                <img src="./images/LinkedIn.jpg" alt="LinkedIn" class="social-img">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Confirmation Message -->
+  <div id="appreciationModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="appreciationMessage"></div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Nerissa Bautista | All Rights Reserved</p>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+</body>
+
+</html>
